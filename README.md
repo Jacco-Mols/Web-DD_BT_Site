@@ -9,7 +9,7 @@ Ik heb vandaag een html structuur gemaakt van de eerste pagina van het formulier
 Wat heb je vandaag gedaan?
 Wat heb je geleerd?
 Hoelang duurde dat?
-Wat ga je morgen doen?
+Wat ga je volgende keer doen?
 
 
 
