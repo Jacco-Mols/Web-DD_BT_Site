@@ -1,0 +1,17 @@
+:root {
+    --ns-yellow: #ffc917;
+    --ns-blue: #2455e6;
+    --ns-green: #00c690;
+    --ns-darkblue: #003082;
+    --ns-white: #fdfcfc;
+    --ns-white-gray: #e6e6e9;
+    --ns-black: #000;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}

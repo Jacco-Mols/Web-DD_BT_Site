@@ -4,53 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <h1>Dit is een schoolproect</h1>
+        <h1>Dit is een schoolproject</h1>
     </header>
     <main>
         <!-- form -->
-         <!-- test -->
-        <form action="" method="GET" name="Erfbelasting">
+        <form method="GET" name="Erfbelasting">
+            <!-- gegevens van de overledene -->
             <fieldset>
                 <legend><h3>Gegevens van de overledene</h3></legend>
                 <fieldset>
-                    <legend>Naam</legend>
+                    <legend>Voorletter(s), Tussenvoegsel(s) en Achternaam</legend>
                     <label>
-                        Voorletter(s)
-                        <input type="text" name="name" placeholder="Voorletter(s)">
+                        <input type="text" name="name" placeholder="Voorletter(s)" required>
                     </label>
                     <label>
-                        Tussenvoegsel(s)
                         <input type="text" name="name" placeholder="Tussenvoegsel(s)">
                     </label>
                     <label>
-                        Achternaam
-                        <input type="text" name="name" placeholder="Achternaam">
+                        <input type="text" name="name" placeholder="Achternaam" required>
                     </label>
                 </fieldset>
 
                 <fieldset>
                     <legend>BSN nummer</legend>
-                    <input type="text" name="bsn">
+                    <input type="text" minlength="9" maxlength="9" max name="bsn" required>
                 </fieldset>
 
                 <fieldset>
                     <legend>Overlijdensdatum</legend>
-                    <input type="date" name="date">
+                    <input type="date" name="date" required min="2020-01-01" max="2026-12-31">
                 </fieldset>
 
                 <fieldset>
                     <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
                     <label>
                         Ja
-                        <input type="radio" name="partner">
+                        <input type="radio" name="radio1">
                     </label>
 
                     <label>
                         Nee
-                        <input type="radio" name="partner">
+                        <input type="radio" name="radio1">
                     </label>
                 </fieldset>
 
@@ -58,12 +56,12 @@
                     <legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partnerschapsvoorwaarden laten vastleggen in een notariële akte?</legend>
                     <label>
                         Ja
-                        <input type="radio" name="getrouwd">
+                        <input type="radio" name="radio2">
                     </label>
                 
                     <label>
                         Nee
-                        <input type="radio" name="getrouwd">
+                        <input type="radio" name="radio2">
                     </label>
                 </fieldset>
 
@@ -71,12 +69,12 @@
                     <legend>Hadden de overledene en diens partner een finaal verrekenbeding?</legend>
                     <label>
                         Ja
-                        <input type="radio" name="partners">
+                        <input type="radio" name="radio3">
                     </label>
                 
                     <label>
                         Nee
-                        <input type="radio" name="partners">
+                        <input type="radio" name="radio3">
                     </label>
                 </fieldset>
 
@@ -92,12 +90,12 @@
                     <legend>Had de overledene kinderen?</legend>
                     <label>
                         Ja
-                        <input type="radio">
+                        <input type="radio" name="radio4">
                     </label>
 
                     <label>
                         Nee
-                        <input type="radio">
+                        <input type="radio" name="radio4">
                     </label>
                 </fieldset>
 
@@ -106,12 +104,12 @@
                     <legend>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>
                     <label>
                         Ja
-                        <input type="radio">
+                        <input type="radio" name="radio5">
                     </label>
 
                     <label>
                         Nee
-                        <input type="radio">
+                        <input type="radio" name="radio5">
                     </label>
                 </fieldset>
 
@@ -120,12 +118,12 @@
                     <legend>Had dit overleden kind zelf kinderen?</legend>
                     <label>
                         Ja
-                        <input type="radio">
+                        <input type="radio" name="radio6">
                     </label>
 
                     <label>
                         Nee
-                        <input type="radio">
+                        <input type="radio" name="radio6">
                     </label>
                 </fieldset>
 
@@ -134,15 +132,14 @@
                     <legend>Had de overledene een testament?</legend>
                     <label>
                         Ja
-                        <input type="radio">
+                        <input type="radio" name="radio7">
                     </label>
 
                     <label>
                         Nee
-                        <input type="radio">
+                        <input type="radio" name="radio7">
                     </label>
                 </fieldset>
-
 
                 <fieldset>
                     <legend>Gegevens Notaris</legend>
@@ -151,12 +148,70 @@
                         <input type="number">
                     </label>
 
-                    
+                        <label>
+                            Voorletter(s)
+                            <input type="text" placeholder="Voorletter(s)">
+                        </label>
+                        <label>
+                            Tussenvoegsel(s)
+                            <input type="text" placeholder="Tussenvoegsel(s)">
+                        </label>
+                        <label>
+                             Achternaam
+                            <input type="text" placeholder="Achternaam">
+                        </label>
+
+                    <label>
+                        Vestigingsplaats
+                        <input type="text" placeholder="Type hier de plaats">
+                    </label>
+
+                    <label>
+                        Datum van het testament of van de laatste wijziging
+                        <input type="date">
+                    </label>
+
+
+
                 </fieldset>
 
 
 
             </fieldset>
+
+            <!-- fieldset gegevens gemachtige -->
+             <!-- <fieldset>
+                <legend>Gegevens gemachtigde</legend>
+
+                <fieldset>
+                    <label for="keuze-machtige">
+                        BSN of RSIN
+                        <input type="radio" name="keuze-machtige">
+                    </label>
+                    <label for="keuze-machtige">
+                        beconnummer
+                        <input type="radio" name="keuze-machtige">
+                    </label>
+                    <label for="keuze-machtige">
+                        protocolnummer
+                        <input type="radio" name="keuze-machtige">
+                    </label>
+
+                    <legend>1 van de 3 in: het bsn of RSIN van de gemachtigde, het beconnummer van de adviseur of het protocolnummer van de notaris</legend>
+                    <label>
+                        BSN of RSIN
+                        <input type="text">
+                    </label>
+                    <label>
+                        beconnummer
+                        <input type="text">
+                    </label>
+                    <label>
+                        protocolnummer
+                        <input type="text">
+                    </label>
+                </fieldset>
+             </fieldset> -->
 
         </form>
     </main>
