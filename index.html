@@ -15,23 +15,23 @@
         <form method="GET" name="Erfbelasting">
             <!-- gegevens van de overledene -->
             <fieldset>
-                <legend><h3>Gegevens van de overledene</h3></legend>
+                <legend class="title-gegevens-overlende"><h3>Gegevens van de overledene</h3></legend>
                 <fieldset>
                     <legend>Voorletter(s), Tussenvoegsel(s) en Achternaam</legend>
                     <label>
-                        <input type="text" name="name" placeholder="Voorletter(s)" required>
+                        <input type="text" placeholder="Voorletter(s)" required>
                     </label>
                     <label>
-                        <input type="text" name="name" placeholder="Tussenvoegsel(s)">
+                        <input type="text" placeholder="Tussenvoegsel(s)">
                     </label>
                     <label>
-                        <input type="text" name="name" placeholder="Achternaam" required>
+                        <input type="text" placeholder="Achternaam" required>
                     </label>
                 </fieldset>
 
                 <fieldset>
                     <legend>BSN nummer</legend>
-                    <input type="text" minlength="9" maxlength="9" max name="bsn" required>
+                    <input type="text" minlength="9" maxlength="9" name="bsn" required>
                 </fieldset>
 
                 <fieldset>
@@ -39,7 +39,7 @@
                     <input type="date" name="date" required min="2020-01-01" max="2026-12-31">
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="radio-question">
                     <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
                     <label>
                         Ja
@@ -52,7 +52,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="radio-question">
                     <legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partnerschapsvoorwaarden laten vastleggen in een notariële akte?</legend>
                     <label>
                         Ja
@@ -65,7 +65,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="radio-question">
                     <legend>Hadden de overledene en diens partner een finaal verrekenbeding?</legend>
                     <label>
                         Ja
@@ -78,7 +78,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset >
                     <legend>Datum huwelijkse of partnerschapsvoorwaarden</legend>
                     <label>
                         Datumn
@@ -86,7 +86,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="radio-question">
                     <legend>Had de overledene kinderen?</legend>
                     <label>
                         Ja
@@ -99,8 +99,7 @@
                     </label>
                 </fieldset>
 
-                
-                <fieldset>
+                <fieldset class="radio-question">
                     <legend>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>
                     <label>
                         Ja
@@ -113,8 +112,7 @@
                     </label>
                 </fieldset>
 
-
-                <fieldset>
+                <fieldset class="radio-question">
                     <legend>Had dit overleden kind zelf kinderen?</legend>
                     <label>
                         Ja
@@ -127,8 +125,7 @@
                     </label>
                 </fieldset>
 
-
-                <fieldset>
+                <fieldset class="radio-question">
                     <legend>Had de overledene een testament?</legend>
                     <label>
                         Ja
@@ -145,7 +142,7 @@
                     <legend>Gegevens Notaris</legend>
                     <label>
                         Protocolnummer notaris
-                        <input type="number">
+                        <input type="text" minlength="6" maxlength="6">
                     </label>
 
                         <label>
@@ -212,6 +209,9 @@
                     </label>
                 </fieldset>
              </fieldset> -->
+
+
+             <button type="submit">Verzend</button>
 
         </form>
     </main>
