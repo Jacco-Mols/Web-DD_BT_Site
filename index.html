@@ -14,45 +14,55 @@
         <!-- form -->
         <form method="GET" name="Erfbelasting">
             <!-- gegevens van de overledene -->
-            <fieldset>
+            <!-- ------1.a-------- -->
+            <fieldset class="pagina">
                 <legend class="title-gegevens-overlende"><h3>Gegevens van de overledene</h3></legend>
                 <fieldset>
-                    <legend>Voorletter(s), Tussenvoegsel(s) en Achternaam</legend>
+                    <legend>Naam en BSN nummer van de overledene</legend>
                     <label>
-                        <input type="text" placeholder="Voorletter(s)" required>
+                        Voorletter(s)
+                        <input type="text" required>
                     </label>
                     <label>
-                        <input type="text" placeholder="Tussenvoegsel(s)">
+                        Tussenvoegsel(s) 
+                        <input type="text">
                     </label>
                     <label>
-                        <input type="text" placeholder="Achternaam" required>
+                        Achternaam
+                        <input type="text" required>
                     </label>
+                    <label>
+                        BSN nummer
+                        <input class="bsn-input" type="text" minlength="9" maxlength="9" name="bsn" required>
+                    </label>
+                    <p class="bsn-error">9 characters required</p>
                 </fieldset>
 
-                <fieldset>
-                    <legend>BSN nummer</legend>
-                    <input type="text" minlength="9" maxlength="9" name="bsn" required>
-                </fieldset>
 
                 <fieldset>
                     <legend>Overlijdensdatum</legend>
-                    <input type="date" name="date" required min="2020-01-01" max="2026-12-31">
+                    <label>
+                        Datumn
+                        <input type="date" name="date" required min="2025-11-15" max="2026-03-02">
+                    </label>
                 </fieldset>
 
-                <fieldset class="radio-question">
+
+                <!-- ------1.b-------- -->
+                <fieldset class="radio-question" name="overledene-partners">
                     <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
                     <label>
                         Ja
-                        <input type="radio" name="radio1">
+                        <input type="radio" name="radio1" value="ja">
                     </label>
 
                     <label>
                         Nee
-                        <input type="radio" name="radio1">
+                        <input type="radio" name="radio1" value="nee">
                     </label>
                 </fieldset>
 
-                <fieldset class="radio-question">
+                <fieldset class="radio-question" name="vervolgvraag-partners">
                     <legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partnerschapsvoorwaarden laten vastleggen in een notariële akte?</legend>
                     <label>
                         Ja
@@ -65,7 +75,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset class="radio-question">
+                <fieldset class="radio-question" name="vervolgvraag-partners">
                     <legend>Hadden de overledene en diens partner een finaal verrekenbeding?</legend>
                     <label>
                         Ja
@@ -78,7 +88,8 @@
                     </label>
                 </fieldset>
 
-                <fieldset >
+
+                <fieldset name="vervolgvraag-partners">
                     <legend>Datum huwelijkse of partnerschapsvoorwaarden</legend>
                     <label>
                         Datumn
@@ -86,20 +97,21 @@
                     </label>
                 </fieldset>
 
-                <fieldset class="radio-question">
+                <!-- ------1.c-------- -->
+                <fieldset class="radio-question" name="overledene-kinderen">
                     <legend>Had de overledene kinderen?</legend>
                     <label>
                         Ja
-                        <input type="radio" name="radio4">
+                        <input type="radio" name="radio4" value="ja">
                     </label>
 
                     <label>
                         Nee
-                        <input type="radio" name="radio4">
+                        <input type="radio" name="radio4" value="nee">
                     </label>
                 </fieldset>
 
-                <fieldset class="radio-question">
+                <fieldset class="radio-question" name="vervolgvraag-kinderen">
                     <legend>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>
                     <label>
                         Ja
@@ -112,7 +124,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset class="radio-question">
+                <fieldset class="radio-question" name="vervolgvraag-kinderen">
                     <legend>Had dit overleden kind zelf kinderen?</legend>
                     <label>
                         Ja
@@ -125,20 +137,21 @@
                     </label>
                 </fieldset>
 
-                <fieldset class="radio-question">
+                <!-- ------1.D-------- -->
+                <fieldset class="radio-question" name="overledene-testament">
                     <legend>Had de overledene een testament?</legend>
                     <label>
                         Ja
-                        <input type="radio" name="radio7">
+                        <input type="radio" name="radio7" value="ja">
                     </label>
 
                     <label>
                         Nee
-                        <input type="radio" name="radio7">
+                        <input type="radio" name="radio7" value="nee">
                     </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset name="overledene-notaris">
                     <legend>Gegevens Notaris</legend>
                     <label>
                         Protocolnummer notaris
@@ -147,20 +160,20 @@
 
                         <label>
                             Voorletter(s)
-                            <input type="text" placeholder="Voorletter(s)">
+                            <input type="text">
                         </label>
                         <label>
                             Tussenvoegsel(s)
-                            <input type="text" placeholder="Tussenvoegsel(s)">
+                            <input type="text">
                         </label>
                         <label>
                              Achternaam
-                            <input type="text" placeholder="Achternaam">
+                            <input type="text">
                         </label>
 
                     <label>
                         Vestigingsplaats
-                        <input type="text" placeholder="Type hier de plaats">
+                        <input type="text">
                     </label>
 
                     <label>
@@ -176,7 +189,7 @@
             </fieldset>
 
             <!-- fieldset gegevens gemachtige -->
-             <!-- <fieldset>
+             <fieldset class="pagina">
                 <legend>Gegevens gemachtigde</legend>
 
                 <fieldset>
@@ -207,7 +220,7 @@
                         <input type="text">
                     </label>
                 </fieldset>
-             </fieldset> -->
+             </fieldset>
 
 
 
@@ -216,10 +229,12 @@
              <!-- <details>
                 <summary></summary>
              </details> -->
-             <button type="submit">Verzend</button>
+             <button type="submit">Volgende</button>
 
         </form>
     </main>
     <footer></footer>
+
+    <script src="./Script.js"></script>
 </body>
 </html>
