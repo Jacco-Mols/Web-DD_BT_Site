@@ -13,6 +13,9 @@ Ik heb vandaag de html toegevoegd van de eerste pagina die ik nog niet had. Dit 
 ### Maandag 2 Maart
 In de ochtend heb ik een workshop gevolgd van Victor, hierin legde hij uit hoe je JavaScript kan toepassen om een validatie toe te passen op bijvoorbeeld text inputs. Dit heb ik later op de dag leren toepassen in mijn eigen site bij een text input. Hier krijg je een bericht als je niet het juiste aantal karakters hebt ingevuld, dit werkt helaas nog niet naar gewenst. In de middag heb ik er ook voor gezorgd om vragen weg te laten als deze niet van toepassing zijn. Dit heb ik volledig met css gedaan met een lange css selector. Hierin heb ik de opacity op 0 gezet, waardoor het weg gaat.
 
+### Dinsdag 3 Maart
+Om 9:30 hebben we in onze groepjes de onderwerpen besproken en uitgewerkt in codepen, ik had zelf het onderwerp type=radio. In codepen heb ik verschillende dingen uitgeprobeert: https://codepen.io/Jacco01/pen/ogzjrWy?editors=0100
+
 Wat heb je vandaag gedaan?
 Wat heb je geleerd?
 Hoelang duurde dat?
