@@ -11,7 +11,7 @@ textInput.forEach(input => {
     });
 });
 
-BSN.addEventListener('input', () => {
+BSN.addEventListener('blur', () => {
     const value = BSN.value
     if(value.length === 9 ) {
         console.log('check');
