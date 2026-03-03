@@ -8,7 +8,10 @@ Ik heb vandaag een html structuur gemaakt van de eerste pagina van het formulier
 ### Dinsdag 17 Februari
 Ik heb vandaag de html toegevoegd van de eerste pagina die ik nog niet had. Dit duurde niet zo lang en was meer van hetzelfde. Wat wel lang duurde was het uploaden van mijn fonts. Ik wilde ervoor zorgen dat ze niet in mijn github stonden maar wel op mijn computer, hiervoor had ik .gitignore gebruikt waarin ik *.ttf had gezegd. Dit zorgde ervoor dat alle .ttf bestanden niet naar mijn github werden gestuurd. Waar ik tegenaan liep was dat ik de fonts had toegevoegd voordat ik gitignore had toegevoegd. Ik heb daarnaast de eerste styling van mijn css bestand toegevoegd, hierdoor lijkt het wat meer op de NS stijl, de workshop van Victor had hier veel bij geholpen.
 
+## Week 2
 
+### Maandag 2 Maart
+In de ochtend heb ik een workshop gevolgd van Victor, hierin legde hij uit hoe je JavaScript kan toepassen om een validatie toe te passen op bijvoorbeeld text inputs. Dit heb ik later op de dag leren toepassen in mijn eigen site bij een text input. Hier krijg je een bericht als je niet het juiste aantal karakters hebt ingevuld, dit werkt helaas nog niet naar gewenst. In de middag heb ik er ook voor gezorgd om vragen weg te laten als deze niet van toepassing zijn. Dit heb ik volledig met css gedaan met een lange css selector. Hierin heb ik de opacity op 0 gezet, waardoor het weg gaat.
 
 Wat heb je vandaag gedaan?
 Wat heb je geleerd?
