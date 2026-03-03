@@ -40,22 +40,37 @@ h1 {
     font-size: 2em;
 }
 
-/* paginass */
-/* .pagina {
+/* paginas */
+.pagina {
     position: absolute;
     top: 0;
     left: 0;
     height: 0;
     opacity: 0;
     overflow: hidden;
-} */
-
-.pagina_active {
-    opacity: 1;
-
 }
 
-/* page 1 - info over overledene */
+.pagina.active {
+    opacity: 1;
+    pointer-events: all;
+    position: relative;
+    height: auto;
+}
+
+.pagination {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+}
+
+.pagination button {
+    width: 35%;
+    height: 8vh; 
+}
+
+
 /* fieldsets & legends */
 fieldset {
     border: none;
@@ -64,15 +79,15 @@ fieldset {
     height: 100%;
 }
 
-fieldset:first-of-type {
-    display: flex;
-    flex-direction: column;
-}
-
 legend {
     width: 100%;
     color: var(--ns-darkblue);
     font-family: 'medium';
+}
+
+fieldset:first-of-type {
+    display: flex;
+    flex-direction: column;
 }
 
 .title-gegevens-overlende {
@@ -81,25 +96,31 @@ legend {
     background: none
 }
 
-fieldset fieldset legend{
-    font-size: 1rem;
+.radio-question legend {
+    margin-bottom: 1rem;
 }
 
 /* labels & inputs */
-.radio-question legend {
-    margin-bottom: 1rem;
+label {
+    font-family: 'ragular';
 }
 
 .radio-question label {
     display: flex;
     align-items: center;
-    font-family: 'ragular';
+    background-color: var(--ns-white);
     font-size: .9rem;
-    background-color: var(--ns-gray);
     width: 100%;
     height: 2rem;
-    border-radius: 5px;
-    padding: 0.2rem;
+    padding: 0.5rem;
+    border: solid 1px var(--ns-blue);
+    border-radius: 4px;
+}
+
+.radio-question label:has(input[type=radio]:checked) {
+    background-color: var(--ns-blue);
+    color: var(--ns-white);
+    box-shadow: inset 0 -3px 0 var(--ns-darkblue);
 }
 
 .radio-question label:first-of-type {
@@ -107,9 +128,7 @@ fieldset fieldset legend{
 }
 
 input[type=radio] {
-    background-color: var(--ns-green);
-    border: none;
-    transition: 0.2s all linear;
+    appearance: none;
 }
 
 input[type=text] {
@@ -119,20 +138,25 @@ input[type=text] {
     border-radius: 5px;
     border: 1.5px solid var(--ns-darker-gray);
     margin-bottom: .5rem;
-
 }
 
 input[type=text]:focus {
    border: solid 1.5px var(--ns-blue);
 }
 
-input[type=text]:required {
-    &:invalid {
-    border: solid 1.5px var(--ns-red);
-    }
-
-    &:valid {
+input[type=text]:required:valid {
     border: solid 1.5px var(--ns-green);
+}
+
+label:has(input[type=date]) {
+    display: flex;
+    flex-direction: column;
+   
+    &:input {
+    background-color: var(--ns-white);
+    color: var(--ns-blue);
+    border: solid 1px var(--ns-yellow);
+    height: 100px;
     }
 }
 
@@ -152,8 +176,6 @@ button[type=submit] {
 }
 
 
-
-
 /* removing unnacessary questions */
 @keyframes removeQuestion {
     50% {
@@ -165,6 +187,7 @@ button[type=submit] {
     }
 }
 
+/* selector geschreven met behulp van klasgenoot Ocean, hij had een soort gelijke selector in css */
 fieldset[name="overledene-partners"]:has(input[name="radio1"][value="nee"]:checked) ~ fieldset[name="vervolgvraag-partners"],
 fieldset[name="overledene-kinderen"]:has(input[name="radio4"][value="nee"]:checked) ~ fieldset[name="vervolgvraag-kinderen"],
 fieldset[name="overledene-testament"]:has(input[name="radio7"][value="nee"]:checked) ~ fieldset[name="overledene-notaris"]  { 

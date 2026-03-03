@@ -21,34 +21,35 @@
                     <legend>Naam en BSN nummer van de overledene</legend>
                     <label>
                         Voorletter(s)
-                        <input type="text" required>
+                        <input type="text" name="voornaam" required>
                     </label>
                     <label>
                         Tussenvoegsel(s) 
-                        <input type="text">
+                        <input type="text" name="tussenvoegsel">
                     </label>
                     <label>
                         Achternaam
-                        <input type="text" required>
+                        <input type="text" name="achternaam" required>
                     </label>
+                    <p class="bsn-error hidden">9 characters required</p>
                     <label>
                         BSN nummer
                         <input class="bsn-input" type="text" minlength="9" maxlength="9" name="bsn" required>
                     </label>
-                    <p class="bsn-error">9 characters required</p>
-                </fieldset>
 
-
-                <fieldset>
-                    <legend>Overlijdensdatum</legend>
                     <label>
-                        Datumn
-                        <input type="date" name="date" required min="2025-11-15" max="2026-03-02">
+                        Overlijdensdatum
+                        <input type="date" name="date" min="2025-11-15" max="2026-03-02" required>
                     </label>
                 </fieldset>
 
 
-                <!-- ------1.b-------- -->
+
+            </fieldset>
+
+            <!-- partners overledene -->
+             <fieldset class="pagina">
+                <legend></legend>
                 <fieldset class="radio-question" name="overledene-partners">
                     <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
                     <label>
@@ -183,11 +184,9 @@
 
 
 
+
                 </fieldset>
-
-`
-            </fieldset>
-
+             </fieldset>
             <!-- fieldset gegevens gemachtige -->
              <fieldset class="pagina">
                 <legend>Gegevens gemachtigde</legend>
@@ -222,14 +221,17 @@
                 </fieldset>
              </fieldset>
 
-
-
-
+             <!-- <fieldset class="pagina">
+             </fieldset> -->
 
              <!-- <details>
                 <summary></summary>
              </details> -->
-             <button type="submit">Volgende</button>
+            <div class="pagination">
+                <button type="button" id="prev">Vorige</button>
+                <p id="pageindex"></p>
+                <button type="button" id="next">Volgende</button>
+            </div>
 
         </form>
     </main>
