@@ -23,7 +23,11 @@ Hoelang duurde dat?
 Wat ga je volgende keer doen?
 
 ### Vrijdag 6 Maart
-Vandaag ben ik nog tussen de gesprekken in even bezig geweest met mijn formulier. Ik heb ervoor gezorgd dat het formulier werkt als je js niet wilt laden, normaal zouden pagina's een hidden class hebben waardoor je niks zou zien zonder js. Door in html standaard de .active class mee te geven aan de pagina's zie je automatisch wel. Gelukkig werkt het nu ook nog als de js er wel bij zit.
+Vandaag ben ik nog tussen de gesprekken in even bezig geweest met mijn formulier. Ik heb ervoor gezorgd dat het formulier werkt als je js niet wilt laden, normaal zouden pagina's een hidden class hebben waardoor je niks zou zien zonder js. Door in html standaard de .active class mee te geven aan de pagina's zie je automatisch wel. Gelukkig werkt het nu ook nog als de js er wel bij zit. Het gesprek met mijn groepje ging heel goed ik veel duidelijke en nuttige feedback punten gekregen die nog volgende week ga verwerken:
+- Zorg dat je nog een font vind die meer in de stijl is van NS.
+- Zorg ervoor dat het werkt zonder JS.
+- Het is handig als mensen hun voortgang kunnen zien in het formulier.
+
 
 ### Afronding week 2 BT
 In deze week heb ik hele grote stappen gemaakt voor het vak BT. Ik heb ervoor gezorgd dat de verschillende onderdelen van het formulier op aparte pagina's staan en dit ook laten werken zonder js. Ik vind dat ik JavaScript al heel snel aan het leren ben, maar merk nog wel een beetje een achterstand in mijn kennis vergeleken met mijn klasgenoten. Ik denk dat ik volgende week verder ga met de styling van het formulier en ervoor zorg dat de onnodige radio vragen standaard uit staan en pas tevoorschijn komen als je op ja klikt bij relaterende vragen.
