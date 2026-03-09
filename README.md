@@ -38,6 +38,15 @@ In de ochtend hadden we een introduct van Rijk van Zanten, hij is de oprichter v
 Ik heb me vandaag verder gericht op het stylen van mijn formulier, het zag er nog heel goedkoop en druk uit. Dit kost mij allemaal veel langer dan gedacht, ik ben constant door de dag heen van gedachte veranderd en ben door verschillende styling versies heen gegaan. Ik ad bijvoorbeeld de keuze gemaakt om de achtergrond van het formulier geel te maken, dit leek mij achteraf veel te druk, waardoor ik toch voor een licht grijze achtergrond had gekozen. Ik heb vandaag geleerd om veel stapsgewijzer te werken en ervoor te zorgen dat je bijvoorbeeld een pattern helemaal afmaakt voordat je verder werkt, daarnaast ben ik veel met hetzelfde bezig geweest in css.
 Morgen ga ik me nog op de laatste details richten en daarna ben ik van plan om ervoor te zorgen dat ik minimaal 2 patterns in mijn formulier heb staan.
 
+Before:
+
+<img width="1500" height="765" alt="Screenshot 2026-03-09 at 15 48 51" src="https://github.com/user-attachments/assets/da497952-5282-4ba7-bdf8-e7624625dde9" />
+
+
+After:
+
+<img width="999" height="772" alt="Screenshot 2026-03-09 at 15 49 02" src="https://github.com/user-attachments/assets/5ca258b7-21b4-48fb-b5a3-6b679db0b561" />
+
 
 
 ### Bronnen
