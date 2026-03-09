@@ -33,6 +33,10 @@ Vandaag ben ik nog tussen de gesprekken in even bezig geweest met mijn formulier
 In deze week heb ik hele grote stappen gemaakt voor het vak BT. Ik heb ervoor gezorgd dat de verschillende onderdelen van het formulier op aparte pagina's staan en dit ook laten werken zonder js. Ik vind dat ik JavaScript al heel snel aan het leren ben, maar merk nog wel een beetje een achterstand in mijn kennis vergeleken met mijn klasgenoten. Ik denk dat ik volgende week verder ga met de styling van het formulier en ervoor zorg dat de onnodige radio vragen standaard uit staan en pas tevoorschijn komen als je op ja klikt bij relaterende vragen.
 
 
+### Maandag 9 Maart
+In de ochtend hadden we een introduct van Rijk van Zanten, hij is de oprichter van Directus. Het was heel interessant om te horen wat hij allemaal heeft gestudeert en welke ervaring hij heeft. Het gaf me ook wat inspiratie voor mijn afstudeer project die ik hierna moet maken.
+Ik heb me vandaag verder gericht op het stylen van mijn formulier, het zag er nog heel goedkoop en druk uit. Dit kost mij allemaal veel langer dan gedacht, ik ben constant door de dag heen van gedachte veranderd en ben door verschillende styling versies heen gegaan. Ik ad bijvoorbeeld de keuze gemaakt om de achtergrond van het formulier geel te maken, dit leek mij achteraf veel te druk, waardoor ik toch voor een licht grijze achtergrond had gekozen. Ik heb vandaag geleerd om veel stapsgewijzer te werken en ervoor te zorgen dat je bijvoorbeeld een pattern helemaal afmaakt voordat je verder werkt, daarnaast ben ik veel met hetzelfde bezig geweest in css.
+
 
 
 ### Bronnen
