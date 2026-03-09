@@ -15,30 +15,30 @@
         <form method="GET" name="Erfbelasting">
             <!-- gegevens van de overledene -->
             <!-- ------1.a-------- -->
-            <fieldset class="pagina">
-                <legend class="title-gegevens-overlende"><h3>Gegevens van de overledene</h3></legend>
+            <fieldset class="pagina active">
+                <legend class="title-sections"><h3>Gegevens van de overledene</h3></legend>
                 <fieldset>
                     <legend>Naam en BSN nummer van de overledene</legend>
                     <label>
-                        Voorletter(s)
+                        <p>Voorletter(s)</p>
                         <input type="text" name="voornaam" required>
                     </label>
                     <label>
-                        Tussenvoegsel(s) 
+                        <p>Tussenvoegsel(s)</p> 
                         <input type="text" name="tussenvoegsel">
                     </label>
                     <label>
-                        Achternaam
+                        <p>Achternaam</p>
                         <input type="text" name="achternaam" required>
                     </label>
                     <p class="bsn-error hidden">9 characters required</p>
                     <label>
-                        BSN nummer
+                        <p>BSN nummer</p>
                         <input class="bsn-input" type="text" minlength="9" maxlength="9" name="bsn" required>
                     </label>
 
                     <label>
-                        Overlijdensdatum
+                        <p>Overlijdensdatum</p>
                         <input type="date" name="date" min="2025-11-15" max="2026-03-02" required>
                     </label>
                 </fieldset>
@@ -48,44 +48,44 @@
             </fieldset>
 
             <!-- partners overledene -->
-             <fieldset class="pagina">
-                <legend></legend>
+             <fieldset class="pagina active">
+                <legend class="title-sections"><h3>Gegevens nabestaande</h3></legend>
                 <fieldset class="radio-question" name="overledene-partners">
                     <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
                     <label>
-                        Ja
-                        <input type="radio" name="radio1" value="ja">
+                        <p>Ja</p>
+                        <input type="radio" name="radio1" value="ja" required>
                     </label>
 
                     <label>
-                        Nee
-                        <input type="radio" name="radio1" value="nee">
+                        <p>Nee</p>
+                        <input type="radio" name="radio1" value="nee" required>
                     </label>
                 </fieldset>
 
                 <fieldset class="radio-question" name="vervolgvraag-partners">
                     <legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partnerschapsvoorwaarden laten vastleggen in een notariële akte?</legend>
                     <label>
-                        Ja
-                        <input type="radio" name="radio2">
+                        <p>Ja</p>
+                        <input type="radio" name="radio2" value="ja">
                     </label>
                 
                     <label>
-                        Nee
-                        <input type="radio" name="radio2">
+                        <p>Nee</p>
+                        <input type="radio" name="radio2" value="nee">
                     </label>
                 </fieldset>
 
                 <fieldset class="radio-question" name="vervolgvraag-partners">
                     <legend>Hadden de overledene en diens partner een finaal verrekenbeding?</legend>
                     <label>
-                        Ja
-                        <input type="radio" name="radio3">
+                        <p>Ja</p>
+                        <input type="radio" name="radio3" value="ja">
                     </label>
                 
                     <label>
-                        Nee
-                        <input type="radio" name="radio3">
+                        <p>Nee</p>
+                        <input type="radio" name="radio3" value="nee">
                     </label>
                 </fieldset>
 
@@ -93,7 +93,7 @@
                 <fieldset name="vervolgvraag-partners">
                     <legend>Datum huwelijkse of partnerschapsvoorwaarden</legend>
                     <label>
-                        Datumn
+                        <p>Datumn</p>
                         <input type="date">
                     </label>
                 </fieldset>
@@ -102,12 +102,12 @@
                 <fieldset class="radio-question" name="overledene-kinderen">
                     <legend>Had de overledene kinderen?</legend>
                     <label>
-                        Ja
+                        <p>Ja</p>
                         <input type="radio" name="radio4" value="ja">
                     </label>
 
                     <label>
-                        Nee
+                        <p>Nee</p>
                         <input type="radio" name="radio4" value="nee">
                     </label>
                 </fieldset>
@@ -115,26 +115,26 @@
                 <fieldset class="radio-question" name="vervolgvraag-kinderen">
                     <legend>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>
                     <label>
-                        Ja
-                        <input type="radio" name="radio5">
+                        <p>Ja</p>
+                        <input type="radio" name="radio5" value="ja">
                     </label>
 
                     <label>
-                        Nee
-                        <input type="radio" name="radio5">
+                        <p>Nee</p>
+                        <input type="radio" name="radio5" value="nee">
                     </label>
                 </fieldset>
 
                 <fieldset class="radio-question" name="vervolgvraag-kinderen">
                     <legend>Had dit overleden kind zelf kinderen?</legend>
                     <label>
-                        Ja
-                        <input type="radio" name="radio6">
+                        <p>Ja</p>
+                        <input type="radio" name="radio6" value="ja">
                     </label>
 
                     <label>
-                        Nee
-                        <input type="radio" name="radio6">
+                        <p>Nee</p>
+                        <input type="radio" name="radio6" value="nee">
                     </label>
                 </fieldset>
 
@@ -142,12 +142,12 @@
                 <fieldset class="radio-question" name="overledene-testament">
                     <legend>Had de overledene een testament?</legend>
                     <label>
-                        Ja
+                        <p>Ja</p>
                         <input type="radio" name="radio7" value="ja">
                     </label>
 
                     <label>
-                        Nee
+                        <p>Nee</p>
                         <input type="radio" name="radio7" value="nee">
                     </label>
                 </fieldset>
@@ -188,8 +188,8 @@
                 </fieldset>
              </fieldset>
             <!-- fieldset gegevens gemachtige -->
-             <fieldset class="pagina">
-                <legend>Gegevens gemachtigde</legend>
+             <fieldset class="pagina active">
+                <legend class="title-sections">Gegevens gemachtigde</legend>
 
                 <fieldset>
                     <label for="keuze-machtige">
@@ -221,12 +221,6 @@
                 </fieldset>
              </fieldset>
 
-             <!-- <fieldset class="pagina">
-             </fieldset> -->
-
-             <!-- <details>
-                <summary></summary>
-             </details> -->
             <div class="pagination">
                 <button type="button" id="prev">Vorige</button>
                 <p id="pageindex"></p>
@@ -234,9 +228,10 @@
             </div>
 
         </form>
+
     </main>
     <footer></footer>
 
-    <script src="./Script.js"></script>
+    <script src="./Script.js"></script> 
 </body>
 </html>

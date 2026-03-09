@@ -12,7 +12,7 @@ const pageButton = document.querySelectorAll('.page_button');
 
 // Validating error
 textInput.forEach(input => {
-    input.addEventListener('focus', (event) =>  {
+    input.addEventListener('blur', (event) =>  {
     event.target.reportValidity();
     console.log('required');
     });
@@ -30,12 +30,11 @@ BSN.addEventListener('blur', () => {
 });
 
 // swap pages
-
 // Met hulp van Diego heb ik de volgende en vorige pagina functies geschreven. De code kan ik zelf helemaal uitleggen.
 function showCurrentPage(index) {
     pages.forEach((page, i) => {
         page.classList.toggle('active', i === index);
-        pageIndex.innerHTML = index + 1;
+        pageIndex.innerHTML = index + 1 + "/3";
     });
 };
 
@@ -62,7 +61,7 @@ document.getElementById('next').addEventListener('click', () => {
         }
     })
 
-    if (!isValid) return;
+    // if (!isValid) return;
 
     if (currentIndex < pages.length - 1) {
         currentIndex++;
