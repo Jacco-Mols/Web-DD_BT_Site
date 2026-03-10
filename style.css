@@ -1,9 +1,9 @@
 :root {
     --ns-yellow: #ffc917;
     --ns-dark-yellow: #eeb408;
-    --ns-blue: #2455e6;
+    --ns-blue: #0079d3;
     --ns-green: #00c690;
-    --ns-darkblue: #003082;
+    --ns-darkblue: #005ca0;
     --ns-white: #fdfcfc;
     --ns-gray: #e6e6e9;
     --ns-darker-gray: #ccc;
@@ -36,7 +36,7 @@
 }
 
 body {
-    background-color: var(--ns-white);
+    background-color: var(--ns-gray);
 }
 
 header {
@@ -62,10 +62,15 @@ h1 {
 }
 
 form {
-    background-color: var(--ns-gray);
+    background-color: var(--ns-white);
     margin-bottom: 2rem;
     margin-top: 8rem;
-    box-shadow: inset 0px -3px var(--ns-darkblue);
+    box-shadow: inset 0px -3px var(--ns-darker-gray);
+}
+
+select {
+    width: 100%;
+    margin-bottom: 3rem;
 }
 
 /* pagination */
@@ -107,24 +112,22 @@ form {
     width: 35%;
     height: 6vh; 
     max-width: 200px;
-    background-color: var(--ns-darkblue);
+    background-color: var(--ns-blue);
     color: var(--ns-white);
-    border-radius: 5px;
     border: none;
+    box-shadow: inset 0px -3px var(--ns-darkblue);
 }
 
 .pagination button:hover {
-    background-color: var(--ns-blue);
-    transition: .5s
+
+    box-shadow: inset 0px -300px var(--ns-darkblue);
+    transition: .7s
 }
 
-.pagination button:nth-of-type(2) {
-    background-color: var(--ns-yellow);
-    color: var(--ns-black);
-}
-
-.pagination button:nth-of-type(2):hover {
-    background-color: var(--ns-dark-yellow);
+.pagination button:first-of-type {
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--ns-darkblue)
 }
 
 .pagination p {
@@ -201,12 +204,19 @@ input[type=radio] {
     appearance: none;
 }
 
+input[type=date] {
+    height: 2.5rem;
+    width: 100%;
+    background-color: white;
+    border: none;
+    margin-bottom: 1rem;
+}
+
 input[type=text] {
-    background-color: var(--ns-white);
     width: 100%;
     height: 2.5rem;
-    border-radius: 5px;
-    border: 1.5px solid var(--ns-darker-gray);
+    background-color: var(--ns-white);
+    border: 1px solid var(--ns-transparent-black);
     margin-bottom: 1.5rem;
 }
 
@@ -271,10 +281,6 @@ fieldset[name="overledene-testament"]:has(input[name="radio7"][value="nee"]:chec
 }
 
 /* gegevens gmachtigde */
-select {
-    margin-bottom: 3rem;
-}
-
 .gemachtigden label {
     display: none;
 }
