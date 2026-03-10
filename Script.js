@@ -8,7 +8,20 @@ const pageIndex = document.getElementById('pageindex');
 
 let currentIndex = 0;
 
+const pagination = document.querySelector('.pagination')
+
 const pageButton = document.querySelectorAll('.page_button');
+
+const submit = document.querySelector('.submitting');
+
+function hideSubmitButton() {
+    submit.classList.add('hidden');
+    pagination.classList.remove('hidden')
+
+    // document.getElementById('prev').classList.remove('hidden')
+    // document.getElementById('next').classList.remove('hidden')
+};
+hideSubmitButton();
 
 // Validating error
 textInput.forEach(input => {
@@ -54,12 +67,12 @@ document.getElementById('next').addEventListener('click', () => {
     const inputs = currentPage.querySelectorAll('input[required]');
     let isValid = true;
 
-    inputs.forEach(input => {
-        if (!input.checkValidity()) {
-            isValid = false;
-            input.reportValidity();
-        }
-    })
+    // inputs.forEach(input => {
+    //     if (!input.checkValidity()) {
+    //         isValid = false;
+    //         input.reportValidity();
+    //     }
+    // })
 
     // if (!isValid) return;
 

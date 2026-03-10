@@ -12,7 +12,7 @@
     </header>
     <main>
         <!-- form -->
-        <form method="GET" name="Erfbelasting">
+        <form method="get" name="Erfbelasting">
             <!-- gegevens van de overledene -->
             <!-- ------1.a-------- -->
             <fieldset class="pagina active">
@@ -31,10 +31,11 @@
                         <p>Achternaam</p>
                         <input type="text" name="achternaam" required>
                     </label>
-                    <p class="bsn-error hidden">9 characters required</p>
-                    <label>
+
+                    <label class="bsn-label">
                         <p>BSN nummer</p>
                         <input class="bsn-input" type="text" minlength="9" maxlength="9" name="bsn" required>
+                        <p class="bsn-error hidden">9 characters required</p>
                     </label>
 
                     <label>
@@ -103,12 +104,12 @@
                     <legend>Had de overledene kinderen?</legend>
                     <label>
                         <p>Ja</p>
-                        <input type="radio" name="radio4" value="ja">
+                        <input type="radio" name="radio4" value="ja" required>
                     </label>
 
                     <label>
                         <p>Nee</p>
-                        <input type="radio" name="radio4" value="nee">
+                        <input type="radio" name="radio4" value="nee" required>
                     </label>
                 </fieldset>
 
@@ -143,12 +144,12 @@
                     <legend>Had de overledene een testament?</legend>
                     <label>
                         <p>Ja</p>
-                        <input type="radio" name="radio7" value="ja">
+                        <input type="radio" name="radio7" value="ja" required>
                     </label>
 
                     <label>
                         <p>Nee</p>
-                        <input type="radio" name="radio7" value="nee">
+                        <input type="radio" name="radio7" value="nee" required>
                     </label>
                 </fieldset>
 
@@ -182,52 +183,49 @@
                         <input type="date">
                     </label>
 
-
-
-
                 </fieldset>
              </fieldset>
+
             <!-- fieldset gegevens gemachtige -->
              <fieldset class="pagina active">
-                <legend class="title-sections">Gegevens gemachtigde</legend>
+                <legend class="title-sections"><h3>Gegevens gemachtigde</h3></legend>
 
-                <fieldset>
-                    <label for="keuze-machtige">
-                        BSN of RSIN
-                        <input type="radio" name="keuze-machtige">
-                    </label>
-                    <label for="keuze-machtige">
-                        beconnummer
-                        <input type="radio" name="keuze-machtige">
-                    </label>
-                    <label for="keuze-machtige">
-                        protocolnummer
-                        <input type="radio" name="keuze-machtige">
-                    </label>
-
+                <fieldset class="gemachtigden">
                     <legend>1 van de 3 in: het bsn of RSIN van de gemachtigde, het beconnummer van de adviseur of het protocolnummer van de notaris</legend>
-                    <label>
+                    <select name="gemachtigen-info" required>
+                        <option value="">Maak een keuze</option>
+                        <option value="BSN-of-RSIN" required>BSN of RSIN</option>
+                        <option value="beconnummer" required>Beconnummer van de adviseur</option>
+                        <option value="protocolnummer" required>Protocolnummer van de notaris</option>
+                    </select>
+
+                    <label class="label-gemachtige">
                         BSN of RSIN
-                        <input type="text">
+                        <input type="text" minlength="9" maxlength="9" required>
                     </label>
-                    <label>
-                        beconnummer
-                        <input type="text">
+                    <label class="label-gemachtige">
+                        Beconnummer
+                        <input type="text" required>
                     </label>
-                    <label>
-                        protocolnummer
-                        <input type="text">
+                    <label class="label-gemachtige">
+                        Protocolnummer
+                        <input type="text" required>
                     </label>
+
+
                 </fieldset>
              </fieldset>
 
-            <div class="pagination">
-                <button type="button" id="prev">Vorige</button>
-                <p id="pageindex"></p>
-                <button type="button" id="next">Volgende</button>
-            </div>
-
         </form>
+
+            <div class="pagination hidden">
+                <button type="button" id="prev">Terug</button>
+                <p id="pageindex"></p>
+                <button type="button" id="next">Volgende pagina</button>
+            </div>
+            <div class="submitting">
+                <button class="submit_button" type="submit">Verstuur formulier</button>
+            </div>
 
     </main>
     <footer></footer>
