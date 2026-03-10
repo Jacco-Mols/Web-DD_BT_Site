@@ -52,3 +52,10 @@ After:
 ### Bronnen
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form - form examples
+
+
+### Dinsdag 10 Maart
+Ik de ochtend hebben we een weekly geek gehad over het artikel What happened to text inputs. Het artikel was over het algemeen wel interssant. Ik vond alleen dat er te veel pauzes in de video zat en misschien veel stukken in teksten onnodig waren om de boodschap over te brengen.
+
+Ik ben verder veel met mijn project bezig geweest. Ik heb de knoppen aan de onderkant gestyled en ervoor gezorgd dat deze knoppen weg gaan op het moment dat javascript niet laadt, daarvoor in plaats komt een submit knop onderaan het formulier. Verder heb wat kleuren aangepast zodat het meer op de stijl van ns lijkt. Ik heb ook nog een pattern toegevoegd van vraag 2a, hier moet de gebruiker een van de 3 tekst velden invullen. Doormiddel van css krijgen de input een display none en weer display block op het moment dat iemand de aansluitende select option heeft gekozen. Ik heb me daarnaast nog een beetje gericht op de validatie van het formulier door bijvoorbeeld de bsn error beter te stijlen. 
+Ik vind het jammer dat net wat minder creatief kunnen zijn dan bij het vak Css, ik moet me erg houden aan de stijl van de NS wat ik op veel momenten niet heel mooi vind.
