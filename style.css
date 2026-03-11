@@ -280,6 +280,8 @@ fieldset[name="overledene-testament"]:has(input[name="radio7"][value="nee"]:chec
     animation-fill-mode: both;
 }
 
+
+
 /* gegevens gmachtigde */
 .gemachtigden label {
     display: none;

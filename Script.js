@@ -67,14 +67,14 @@ document.getElementById('next').addEventListener('click', () => {
     const inputs = currentPage.querySelectorAll('input[required]');
     let isValid = true;
 
-    inputs.forEach(input => {
-        if (!input.checkValidity()) {
-            isValid = false;
-            input.reportValidity();
-        }
-    })
+    // inputs.forEach(input => {
+    //     if (!input.checkValidity()) {
+    //         isValid = false;
+    //         input.reportValidity();
+    //     }
+    // })
 
-    if (!isValid) return;
+    // if (!isValid) return;
 
     if (currentIndex < pages.length - 1) {
         currentIndex++;
