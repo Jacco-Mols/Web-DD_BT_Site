@@ -32,7 +32,7 @@ Vandaag ben ik nog tussen de gesprekken in even bezig geweest met mijn formulier
 ### Afronding week 2 BT
 In deze week heb ik hele grote stappen gemaakt voor het vak BT. Ik heb ervoor gezorgd dat de verschillende onderdelen van het formulier op aparte pagina's staan en dit ook laten werken zonder js. Ik vind dat ik JavaScript al heel snel aan het leren ben, maar merk nog wel een beetje een achterstand in mijn kennis vergeleken met mijn klasgenoten. Ik denk dat ik volgende week verder ga met de styling van het formulier en ervoor zorg dat de onnodige radio vragen standaard uit staan en pas tevoorschijn komen als je op ja klikt bij relaterende vragen.
 
-
+## Week 3
 ### Maandag 9 Maart
 In de ochtend hadden we een introduct van Rijk van Zanten, hij is de oprichter van Directus. Het was heel interessant om te horen wat hij allemaal heeft gestudeert en welke ervaring hij heeft. Het gaf me ook wat inspiratie voor mijn afstudeer project die ik hierna moet maken.
 Ik heb me vandaag verder gericht op het stylen van mijn formulier, het zag er nog heel goedkoop en druk uit. Dit kost mij allemaal veel langer dan gedacht, ik ben constant door de dag heen van gedachte veranderd en ben door verschillende styling versies heen gegaan. Ik ad bijvoorbeeld de keuze gemaakt om de achtergrond van het formulier geel te maken, dit leek mij achteraf veel te druk, waardoor ik toch voor een licht grijze achtergrond had gekozen. Ik heb vandaag geleerd om veel stapsgewijzer te werken en ervoor te zorgen dat je bijvoorbeeld een pattern helemaal afmaakt voordat je verder werkt, daarnaast ben ik veel met hetzelfde bezig geweest in css.
@@ -49,9 +49,7 @@ After:
 
 
 
-### Bronnen
 
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form - form examples
 
 
 ### Dinsdag 10 Maart
@@ -61,3 +59,18 @@ Ik ben verder veel met mijn project bezig geweest. Ik heb de knoppen aan de onde
 Ik vind het jammer dat net wat minder creatief kunnen zijn dan bij het vak Css, ik moet me erg houden aan de stijl van de NS wat ik op veel momenten niet heel mooi vind.
 
 Volgende keer ga ik verder met nog kleine details aan validatie toevoegen, zoals de validatie voor de notaris.
+
+### Vrijdag 13 Maart
+We hadden weer een gesprek vandaag met Victor waarin iedereen feedback met elkaar had gedeelt. Het was fijn om inspiratie te zien en wat mijn groepje allemaal heeft gemaakt. De feedback die ik had gekregen was om bijvoorbeeld de landcodes om te zetten in JavaScript en daar een datalist van te maken. Ook zou het misschien beter zijn om nog de radio vragen standaard uit te zetten hier was ik deze week nog niet aan toegekomen. Ook moest nog wat beter nadenken over de styling en contrast van bijvoorbeeld knoppen.
+
+
+### Afronding week 3 
+Ik vond dat ik deze week wel goede stappen heb gezet in het stylen van het formulier, ik had nog wel meer tijd willen hebben om beter na te denken over de UX van het formulier. Er blijken nog veel onderdelen niet zo goed te werken als ik zelf had gedacht zoals de landcodes en het eerste stukje van het formulier, deze staan nu op een blur maar zijn op veel manieren onhandig, omdat je niet het tekstvak kan deselecteren. 
+
+Ik hoop dat ik volgende week verder kan met de validatie afronden en ervoor zorgen dat de UX veel beter werkt. In principe heb ook al 2 patterns toegevoegd, maar deze werken nog lang niet perfect waardoor ik nog veel moet gaan doen volgende week. We hadden gister ook een spreking gekregen van Robbert Boersma over het maken van formulieren. Ze hadden veel belangrijke en nuttige informatie vertelt over hoe je een formulier wel of niet moet maken en hoe validatie het beste kan werken. Waar ik bijvoorbeeld nog beter over na moet gaan denken is om context van een formulier, dus een uitleg geven bovenin het formulier en bij de required inputs nog verplicht erbij zetten, en eventueel ook waarom het verplicht. 
+
+
+
+### Bronnen
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form - form examples
