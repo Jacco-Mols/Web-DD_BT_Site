@@ -25,7 +25,7 @@ hideSubmitButton();
 
 // Validating error
 textInput.forEach(input => {
-    input.addEventListener('blur', (event) =>  {
+    input.addEventListener('focus', (event) =>  {
     event.target.reportValidity();
     console.log('required');
     });
