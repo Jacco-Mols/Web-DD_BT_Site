@@ -16,22 +16,22 @@
 
 /* Add fallback fontsss */
 @font-face {
-    font-family: 'Bold', Myriad;
-    src: url('./fonts/Roboto-Bold.ttf') format(truetype);
+    font-family: 'Bold';
+    src: url('./fonts/Roboto-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'Medium', Myriad;
+    font-family: 'Medium';
     src: url('./fonts/Roboto-Medium.ttf');
 }
 
 @font-face {
-    font-family: 'Regular', Myriad;
+    font-family: 'Regular';
     src: url('./fonts/Roboto-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Thin', Myriad;
+    font-family: 'Thin';
     src: url('./fonts/Roboto-Thin.ttf');
 }
 
@@ -56,7 +56,7 @@ header {
 }
 
 h1 {
-    font-family: 'bold';
+    font-family: 'bold', sans-serif;
     font-size: 1rem;
     margin: 0;
 }
@@ -131,7 +131,7 @@ select {
 }
 
 .pagination p {
-    font-family: 'Regular';
+    font-family: 'Regular', sans-serif;
 }
 
 /* fieldsets & legends */
@@ -148,7 +148,7 @@ fieldset {
 legend {
     width: 100%;
     color: var(--ns-darkblue);
-    font-family: 'Regular';
+    font-family: 'Regular', sans-serif;
     font-size: 1.1em;
     margin-bottom: 1rem;
 }
@@ -164,7 +164,7 @@ fieldset:first-of-type {
 }
 
 .title-sections {
-    font-family: 'Thin';
+    font-family: 'Thin', sans-serif;
     font-size: 2em;
     text-align: start;
     padding: 0;
@@ -173,7 +173,7 @@ fieldset:first-of-type {
 
 /* labels & inputs */
 label {
-    font-family: 'Regular'
+    font-family: 'Regular', sans-serif;
 }
 
 .radio-question label {
@@ -249,7 +249,7 @@ input.bsn-input {
 }
 
 .bsn-error {
-    font-family: 'Regular';
+    font-family: 'Regular', sans-serif;
     font-size: .8em;
     color: var(--ns-red);
     margin: 0;
