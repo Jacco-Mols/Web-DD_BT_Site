@@ -83,6 +83,17 @@ Niet alles was even goed gelukt helaas, ik heb bijvoorbeeld kunnen aanduiden wel
 Wat minder goed was gelukt was het tweede thema toevoegen voor mensen die liever een donker thema hebben. Ik moet nog wat styling hiervoor toevoegen want ik ben nog niet tevreden met het resultaat. Verder heb ik wel veel feedback kunnen verwerken van vorige week waaronder het wegglaten van de radio vragen. Dit zorgt voor meer rust in het formulier.
 
 
+### Dinsdag 17 Maart
+- Geprobeert om custom errors te melden via javascript voor verplichte velden
+- date validatie
+- context formulier, bijv wat sterretjes betekenen.
+- js validatie verbeterd 
+
+Ik heb vandaag als laatste loodjes geprobeerd custom validities toe te voegen aan mijn formulier zoals ik nu bij het burger service nummer heb. Dit vond ik eigenlijk heel gecompliceerd en heel veel werk om allemaal toe te voegen voor de laatste dag, waardoor ik ervoor heb gekozen om het zo te laten. Ik vind dat ik wel veel progressie heb gemaakt in het formulier, ik heb namelijk javaScript validatie toegevoegd aan de date inputs. Deze inputs worden nu automatisch geüpdate met de datumn van vandaag. Ook kan je niet een datumn verder dan 8 maanden uitkiezen, je 4 maanden om het aangifte formulier in te vullen, maar in sommige gevallen kan je ook uitstel krijgen van 4 maanden. 
+
+In mijn formulier kan je naar een volgende pagina gaan pas als de huidige pagina valide is. Eerst kreeg je allemaal meldingen van het formulier op een onlogische wijze, bijvoorbeeld dat het onderste required input veld werd gemeld i.p.v de eerste die niet valide zijn. Met hulp van Vasilis heb ik nu de reportValidity() functie op het form element, hierdoor report het de eerst volgende required input veld die niet valid. 
+
+
 ### Bronnen
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form - form examples
