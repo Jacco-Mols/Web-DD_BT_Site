@@ -82,8 +82,6 @@ Ik had voor mezelf een lijst gemaakt van dingen die ik nog wilde toevoegen in mi
 Niet alles was even goed gelukt helaas, ik heb bijvoorbeeld kunnen aanduiden welk input velden verplicht waren door een sterretje naast de vraag te zetten. Ik wil nog wel bovenin de website uitleggen wat dit sterretje betekent. Ik heb het element toegevoegd doormiddel van het pseudo element ::before waar ik ook al eerdere uitleg over heb gekregen.
 Wat minder goed was gelukt was het tweede thema toevoegen voor mensen die liever een donker thema hebben. Ik moet nog wat styling hiervoor toevoegen want ik ben nog niet tevreden met het resultaat. Verder heb ik wel veel feedback kunnen verwerken van vorige week waaronder het wegglaten van de radio vragen. Dit zorgt voor meer rust in het formulier.
 
-Ik hoop op latere momenten nog tijd te hebben voor het toevoegen van context en kleine details dat het formulier zullen verbeteren.
-
 
 ### Bronnen
 
