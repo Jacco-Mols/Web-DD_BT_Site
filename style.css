@@ -2,17 +2,28 @@
     --ns-yellow: #ffc917;
     --ns-dark-yellow: #eeb408;
     --ns-blue: #0079d3;
+    --ns-text-blue: #003082;
     --ns-green: #00c690;
     --ns-darkblue: #005ca0;
     --ns-white: #fdfcfc;
+    --ns-black: #000;
     --ns-gray: #e6e6e9;
     --ns-darker-gray: #ccc;
-    --ns-black: #000;
     --ns-red: #f8374b;
 
     --ns-transparent-black: rgb(0, 6, 33, .16);
-}
 
+    @media (prefers-color-scheme: dark) {
+        --ns-yellow: #003082;
+        --ns-blue: #f0f1f3;
+        --ns-text-blue: #f0f1f3;
+        --ns-darkblue: #f0f1f3;
+        --ns-white: #000;
+        --ns-black: #f0f1f3;
+        --ns-gray: #404144;
+        --ns-transparent-black: #404144;
+    }
+}
 
 /* Add fallback fontsss */
 @font-face {
@@ -47,11 +58,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
     position: fixed;
     top: 0;
     left: 0;
-
     z-index: -1
 }
 
@@ -59,6 +68,7 @@ h1 {
     font-family: 'bold', sans-serif;
     font-size: 1rem;
     margin: 0;
+    color: var(--ns-text-blue);
 }
 
 form {
@@ -70,7 +80,15 @@ form {
 
 select {
     width: 100%;
-    margin-bottom: 3rem;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    border: solid 1px var(--ns-transparent-black)
+}
+
+legend p {
+    font-family: 'thin', sans-serif;
+    font-size: .5em;
+    margin-top: 0;
 }
 
 /* pagination */
@@ -81,6 +99,7 @@ select {
     height: 0;
     opacity: 0;
     overflow: hidden;
+    visibility: hidden;
     margin-bottom: 3rem;
 }
 
@@ -92,6 +111,7 @@ select {
     opacity: 1;
     pointer-events: all;
     position: relative;
+    visibility: visible;
     height: auto;
 }
 
@@ -119,7 +139,6 @@ select {
 }
 
 .pagination button:hover {
-
     box-shadow: inset 0px -300px var(--ns-darkblue);
     transition: .7s
 }
@@ -127,11 +146,18 @@ select {
 .pagination button:first-of-type {
     background-color: transparent;
     box-shadow: none;
+    border: solid 1px var(--ns-blue);
     color: var(--ns-darkblue)
+}
+
+.pagination button:first-of-type:hover {
+    background-color: var(--ns-blue);
+    color: var(--ns-white)
 }
 
 .pagination p {
     font-family: 'Regular', sans-serif;
+    color: var(--ns-black)
 }
 
 /* fieldsets & legends */
@@ -147,7 +173,7 @@ fieldset {
 
 legend {
     width: 100%;
-    color: var(--ns-darkblue);
+    color: var(--ns-text-blue);
     font-family: 'Regular', sans-serif;
     font-size: 1.1em;
     margin-bottom: 1rem;
@@ -160,7 +186,7 @@ fieldset:first-of-type {
 
 .radio-question {
     margin: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .title-sections {
@@ -172,8 +198,18 @@ fieldset:first-of-type {
 }
 
 /* labels & inputs */
+/* veld verplicht */
+.verplicht-tekst {
+    font-family: 'Regular', sans-serif;
+    color: var(--ns-red);
+    font-size: 0.8em;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
 label {
     font-family: 'Regular', sans-serif;
+    color: var(--ns-black);
 }
 
 .radio-question label {
@@ -194,6 +230,7 @@ label {
     background-color: var(--ns-blue);
     color: var(--ns-white);
     box-shadow: inset 0 -3px 0 var(--ns-darkblue);
+    border: none;
 }
 
 .radio-question label:first-of-type {
@@ -205,11 +242,15 @@ input[type=radio] {
 }
 
 input[type=date] {
-    height: 2.5rem;
     width: 100%;
-    background-color: white;
-    border: none;
+    height: 2.5rem;
+    background-color: var(--ns-white);
+    border: 1px solid var(--ns-transparent-black);
     margin-bottom: 1rem;
+}
+
+.partners-datumn {
+    width: 100%;
 }
 
 input[type=text] {
@@ -233,10 +274,36 @@ label:has(input[type=date]) {
     flex-direction: column;
 }
 
-label:has(input[type=text],input[type=date]) p {
+label:has(input[type=text],input[type=date], select) p {
     font-size: .9em;
     margin: 0;
     margin-bottom: .5rem;
+}
+
+/* verplichte velden */
+label:has(input[type=text][required], input[type=date][required])::before {
+    content: "*";
+    color: var(--ns-red);
+    position: absolute;
+}
+
+main form label:has(input[type=text][required], input[type=date][required]) p {
+    margin-left: 1rem;
+}
+
+fieldset fieldset:has(input[type=radio][required], select[required]) legend::before {
+    content: "*";
+    color: var(--ns-red);
+    position: absolute;
+    margin-left: -1rem;
+}
+
+fieldset fieldset:has(input[type=radio][required], select[required]) legend {
+    margin-left: 1rem;
+}
+
+fieldset .gemachtigden:has(select[required]) label::before {
+    content: "";
 }
 
 /* bsn custom message */
@@ -259,26 +326,32 @@ input.bsn-input {
     display: none;
 }
 
-/* removing unnacessary questions */
-@keyframes removeQuestion {
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 0;
-        display: none;
-    }
+/* adding yes/no questions */
+fieldset[name="overledene-partners"] ~ fieldset[name="vervolgvraag-partners"],
+fieldset[name="overledene-kinderen"] ~ fieldset[name="vervolgvraag-kinderen"],
+fieldset[name="overledene-testament"] ~ fieldset[name="overledene-notaris"]  { 
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: 2s;
+    pointer-events: none;
 }
 
 /* selector geschreven met behulp van klasgenoot Ocean, hij had een soort gelijke selector in css */
-fieldset[name="overledene-partners"]:has(input[name="radio1"][value="nee"]:checked) ~ fieldset[name="vervolgvraag-partners"],
-fieldset[name="overledene-kinderen"]:has(input[name="radio4"][value="nee"]:checked) ~ fieldset[name="vervolgvraag-kinderen"],
-fieldset[name="overledene-testament"]:has(input[name="radio7"][value="nee"]:checked) ~ fieldset[name="overledene-notaris"]  { 
-    pointer-events: none;
-    animation-name: removeQuestion;
-    animation-duration: .5s;
-    animation-fill-mode: both;
+fieldset[name="overledene-partners"]:has(input[name="radio1"][value="ja"]:checked) ~ fieldset[name="vervolgvraag-partners"],
+fieldset[name="overledene-kinderen"]:has(input[name="radio4"][value="ja"]:checked) ~ fieldset[name="vervolgvraag-kinderen"] { 
+    pointer-events: all;
+    display: block;
+    opacity: 1;
 }
+
+fieldset[name="overledene-testament"]:has(input[name="radio7"][value="ja"]:checked) ~ fieldset[name="overledene-notaris"]  {
+    pointer-events: all;
+    display: block;
+    opacity: 1;
+}
+
+
 
 /* gegevens gmachtigde */
 .gemachtigden label {
@@ -296,7 +369,6 @@ fieldset[name="overledene-testament"]:has(input[name="radio7"][value="nee"]:chec
 .gemachtigden:has(select option[value=protocolnummer]:checked) label:nth-of-type(3){
     display: block;
 }
-
 
 /* big screen */
 @media (min-width: 800px) {
@@ -318,6 +390,41 @@ fieldset[name="overledene-testament"]:has(input[name="radio7"][value="nee"]:chec
         z-index: 9999;
     }
 
+    input[type=text] {
+        width: 700px; 
+    }
+
+    label:has(input[type=radio]) {
+        width: 300px;
+        margin-right: 1.875rem
+    }
+
+    main form .radio-question {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    fieldset[name="overledene-partners"]:has(input[name="radio1"][value="ja"]:checked) { 
+        display: flex;
+        flex-direction: row;
+
+        ~ fieldset[name="vervolgvraag-partners"] {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    fieldset[name="overledene-kinderen"]:has(input[name="radio4"][value="ja"]:checked) { 
+        display: flex;
+        flex-direction: row;
+
+        ~ fieldset[name="vervolgvraag-kinderen"] {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
     .pagina.active {
         width: 700px;
         display: flex;
@@ -325,14 +432,9 @@ fieldset[name="overledene-testament"]:has(input[name="radio7"][value="nee"]:chec
         align-items: center;
         padding:0;
 
-
         > fieldset {
             width: 700px;
         }
-    }
-
-    input[type=text] {
-        width: 700px; 
     }
 
     .pagination {
