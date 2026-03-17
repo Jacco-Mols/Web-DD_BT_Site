@@ -9,15 +9,10 @@ const pageIndex = document.getElementById('pageindex');
 let currentIndex = 0;
 
 const pagination = document.querySelector('.pagination')
-
 const pageButton = document.querySelectorAll('.page_button');
-
 const submit = document.querySelector('.submitting');
 
-
 const dateInput = document.querySelector('.overlijdensdatum');
-
-
 const date = new Date();
 date.setMonth(date.getMonth() -8);
 
@@ -28,14 +23,11 @@ const today = new Date()
 dateInput.max = today.toISOString().split('T')[0];
 console.log(today);
 
-
 function hideSubmitButton() {
     submit.classList.add('hidden');
     pagination.classList.remove('hidden')
 };
-
 hideSubmitButton();
-
 
 // Validating error
 textInput.forEach(input => {
@@ -63,7 +55,6 @@ function showCurrentPage(index) {
         pageIndex.innerHTML = index + 1 + "/3";
     });
 };
-
 showCurrentPage(currentIndex)
 
 document.getElementById('prev').addEventListener('click', () => {
@@ -84,7 +75,6 @@ document.getElementById('next').addEventListener('click', () => {
 
         if (!input.checkValidity()) {
             isValid = false;
-            input.reportValidity()
         }
     })
 

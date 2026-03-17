@@ -12,17 +12,6 @@
     --ns-red: #f8374b;
 
     --ns-transparent-black: rgb(0, 6, 33, .16);
-
-    /* @media (prefers-color-scheme: dark) {
-        --ns-yellow: #003082;
-        --ns-blue: #f0f1f3;
-        --ns-text-blue: #f0f1f3;
-        --ns-darkblue: #f0f1f3;
-        --ns-white: #000;
-        --ns-black: #f0f1f3;
-        --ns-gray: #404144;
-        --ns-transparent-black: #404144;
-    } */
 }
 
 /* Add fallback fontsss */
@@ -364,8 +353,6 @@ fieldset[name="overledene-testament"]:has(input[name="radio7"][value="ja"]:check
     display: block;
     opacity: 1;
 }
-
-
 
 /* gegevens gmachtigde */
 .gemachtigden label {
