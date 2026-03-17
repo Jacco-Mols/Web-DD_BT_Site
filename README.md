@@ -70,6 +70,20 @@ Ik vond dat ik deze week wel goede stappen heb gezet in het stylen van het formu
 Ik hoop dat ik volgende week verder kan met de validatie afronden en ervoor zorgen dat de UX veel beter werkt. In principe heb ook al 2 patterns toegevoegd, maar deze werken nog lang niet perfect waardoor ik nog veel moet gaan doen volgende week. We hadden gister ook een spreking gekregen van Robbert Boersma over het maken van formulieren. Ze hadden veel belangrijke en nuttige informatie vertelt over hoe je een formulier wel of niet moet maken en hoe validatie het beste kan werken. Waar ik bijvoorbeeld nog beter over na moet gaan denken is om context van een formulier, dus een uitleg geven bovenin het formulier en bij de required inputs nog verplicht erbij zetten, en eventueel ook waarom het verplicht. 
 
 
+## Week 4
+
+### Maandag 16 Maart
+Ik had voor mezelf een lijst gemaakt van dingen die ik nog wilde toevoegen in mijn formulier.
+- Dark en light thema voor responsiveness.
+- De radio vragen automatisch uit zetten en aanzetten als je op ja klikt.
+- Meer context over het formulier bijvoorbeeld vertellen welke input verplicht is.
+- Feedback verwerken van vorige week
+
+Niet alles was even goed gelukt helaas, ik heb bijvoorbeeld kunnen aanduiden welk input velden verplicht waren door een sterretje naast de vraag te zetten. Ik wil nog wel bovenin de website uitleggen wat dit sterretje betekent. Ik heb het element toegevoegd doormiddel van het pseudo element ::before waar ik ook al eerdere uitleg over heb gekregen.
+Wat minder goed was gelukt was het tweede thema toevoegen voor mensen die liever een donker thema hebben. Ik moet nog wat styling hiervoor toevoegen want ik ben nog niet tevreden met het resultaat. Verder heb ik wel veel feedback kunnen verwerken van vorige week waaronder het wegglaten van de radio vragen. Dit zorgt voor meer rust in het formulier.
+
+Ik hoop op latere momenten nog tijd te hebben voor het toevoegen van context en kleine details dat het formulier zullen verbeteren. Morgen ga ik aan de slag met css omdat ik hier nog mee achter loop.
+
 
 ### Bronnen
 
