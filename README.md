@@ -50,8 +50,6 @@ After:
 
 
 
-
-
 ### Dinsdag 10 Maart
 Ik de ochtend hebben we een weekly geek gehad over het artikel What happened to text inputs. Het artikel was over het algemeen wel interssant. Ik vond alleen dat er te veel pauzes in de video zat en misschien veel stukken in teksten onnodig waren om de boodschap over te brengen.
 
@@ -62,7 +60,6 @@ Volgende keer ga ik verder met nog kleine details aan validatie toevoegen, zoals
 
 ### Vrijdag 13 Maart
 We hadden weer een gesprek vandaag met Victor waarin iedereen feedback met elkaar had gedeelt. Het was fijn om inspiratie te zien en wat mijn groepje allemaal heeft gemaakt. De feedback die ik had gekregen was om bijvoorbeeld de landcodes om te zetten in JavaScript en daar een datalist van te maken. Ook zou het misschien beter zijn om nog de radio vragen standaard uit te zetten hier was ik deze week nog niet aan toegekomen. Ook moest nog wat beter nadenken over de styling en contrast van bijvoorbeeld knoppen.
-
 
 ### Afronding week 3 
 Ik vond dat ik deze week wel goede stappen heb gezet in het stylen van het formulier, ik had nog wel meer tijd willen hebben om beter na te denken over de UX van het formulier. Er blijken nog veel onderdelen niet zo goed te werken als ik zelf had gedacht zoals de landcodes en het eerste stukje van het formulier, deze staan nu op een blur maar zijn op veel manieren onhandig, omdat je niet het tekstvak kan deselecteren. 
@@ -79,19 +76,13 @@ Ik had voor mezelf een lijst gemaakt van dingen die ik nog wilde toevoegen in mi
 - Meer context over het formulier bijvoorbeeld vertellen welke input verplicht is.
 - Feedback verwerken van vorige week
 
-Niet alles was even goed gelukt helaas, ik heb bijvoorbeeld kunnen aanduiden welk input velden verplicht waren door een sterretje naast de vraag te zetten. Ik wil nog wel bovenin de website uitleggen wat dit sterretje betekent. Ik heb het element toegevoegd doormiddel van het pseudo element ::before waar ik ook al eerdere uitleg over heb gekregen.
-Wat minder goed was gelukt was het tweede thema toevoegen voor mensen die liever een donker thema hebben. Ik moet nog wat styling hiervoor toevoegen want ik ben nog niet tevreden met het resultaat. Verder heb ik wel veel feedback kunnen verwerken van vorige week waaronder het wegglaten van de radio vragen. Dit zorgt voor meer rust in het formulier.
-
+Helaas niet alles was even goed gelukt, ik heb bijvoorbeeld kunnen aanduiden welk input velden verplicht waren door een sterretje naast de vraag te zetten. Ik wil nog wel bovenin de website uitleggen wat dit sterretje betekent. Ik heb het element toegevoegd doormiddel van het pseudo element ::before waar ik ook al eerdere uitleg over heb gekregen.
+Ik had vandaag nog geen tijd gehad om een donker thema toe te voegen wat wel jammer is maar hier ga ik morgen naar kijken. Verder heb ik wel veel feedback kunnen verwerken van vorige week waaronder het standaard wegglaten van de radio vragen. Dit zorgt voor meer rust in het formulier.
 
 ### Dinsdag 17 Maart
-- Geprobeert om custom errors te melden via javascript voor verplichte velden
-- date validatie
-- context formulier, bijv wat sterretjes betekenen.
-- js validatie verbeterd 
-
 Ik heb vandaag als laatste loodjes geprobeerd custom validities toe te voegen aan mijn formulier zoals ik nu bij het burger service nummer heb. Dit vond ik eigenlijk heel gecompliceerd en heel veel werk om allemaal toe te voegen voor de laatste dag, waardoor ik ervoor heb gekozen om het zo te laten. Ik vind dat ik wel veel progressie heb gemaakt in het formulier, ik heb namelijk javaScript validatie toegevoegd aan de date inputs. Deze inputs worden nu automatisch geüpdate met de datumn van vandaag. Ook kan je niet een datumn verder dan 8 maanden uitkiezen, je 4 maanden om het aangifte formulier in te vullen, maar in sommige gevallen kan je ook uitstel krijgen van 4 maanden. 
 
-In mijn formulier kan je naar een volgende pagina gaan pas als de huidige pagina valide is. Eerst kreeg je allemaal meldingen van het formulier op een onlogische wijze, bijvoorbeeld dat het onderste required input veld werd gemeld i.p.v de eerste die niet valide zijn. Met hulp van Vasilis heb ik nu de reportValidity() functie op het form element, hierdoor report het de eerst volgende required input veld die niet valid. 
+In mijn formulier kan je naar een volgende pagina gaan pas als de huidige pagina valide is. Eerst kreeg je allemaal meldingen van het formulier op een onlogische wijze, bijvoorbeeld dat het onderste required input veld werd gemeld i.p.v de eerste die niet valide zijn. Met hulp van Vasilis heb ik nu de reportValidity() functie op het form element, hierdoor report het de eerst volgende required input veld die niet valid.
 
 
 ### Bronnen
