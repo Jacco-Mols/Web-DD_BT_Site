@@ -17,10 +17,11 @@
             <!-- ------1.a-------- -->
             <fieldset class="pagina active">
                 <legend class="title-sections"><h3>Gegevens van de overledene</h3><p>Stap 1 van de 3</p></legend>
+                <p class="context-verplicht">Velden met met * zijn verplicht om in te vullen</p>
                 <fieldset>
                     <legend>Naam en BSN nummer van de overledene</legend>
                     <label>
-                        <p>Voorletter(s) (veld verplicht)</p>
+                        <p>Voorletter(s)</p>
                         <input type="text" name="voornaam" required>
                     </label>
                     <label>
@@ -28,19 +29,19 @@
                         <input type="text" name="tussenvoegsel">
                     </label>
                     <label>
-                        <p>Achternaam (veld verplicht)</p>
+                        <p>Achternaam</p>
                         <input type="text" name="achternaam" required>
                     </label>
 
                     <label class="bsn-label">
-                        <p>BSN nummer (veld verplicht)</p>
+                        <p>BSN nummer</p>
                         <input class="bsn-input" type="text" minlength="9" maxlength="9" name="bsn" required>
                         <p class="bsn-error hidden">9 characters required</p>
                     </label>
 
                     <label>
                         <p>Overlijdensdatum</p>
-                        <input type="date" name="date" min="2025-11-15" max="2026-03-02" required>
+                        <input class="overlijdensdatum"type="date" name="date" min="2025-11-15" max="2026-03-02" required>
                     </label>
                 </fieldset>
 
@@ -51,6 +52,7 @@
             <!-- partners overledene -->
              <fieldset class="pagina active">
                 <legend class="title-sections"><h3>Gegevens nabestaande</h3><p>Stap 2 van de 3</p></legend>
+                <p class="context-verplicht">Velden met met * zijn verplicht om in te vullen</p>
                 <fieldset class="radio-question" name="overledene-partners">
                     <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
                     <label>
@@ -437,7 +439,7 @@
             <!-- fieldset gegevens gemachtige -->
              <fieldset class="pagina active">
                 <legend class="title-sections"><h3>Gegevens gemachtigde</h3><p>Stap 3 van de 3</p></legend>
-
+                <p class="context-verplicht">Velden met met * zijn verplicht om in te vullen</p>
                 <fieldset class="gemachtigden">
                     <legend>1 van de 3 in: het bsn of RSIN van de gemachtigde, het beconnummer van de adviseur of het protocolnummer van de notaris</legend>
                     <select name="gemachtigen-info" required>

@@ -14,6 +14,21 @@ const pageButton = document.querySelectorAll('.page_button');
 
 const submit = document.querySelector('.submitting');
 
+
+const dateInput = document.querySelector('.overlijdensdatum');
+
+
+const date = new Date();
+date.setMonth(date.getMonth() -8);
+
+const minDate = date.toISOString().split('T')[0];
+dateInput.min = minDate;
+
+const today = new Date()
+dateInput.max = today.toISOString().split('T')[0];
+console.log(today);
+
+
 function hideSubmitButton() {
     submit.classList.add('hidden');
     pagination.classList.remove('hidden')
@@ -21,11 +36,11 @@ function hideSubmitButton() {
 
 hideSubmitButton();
 
+
 // Validating error
 textInput.forEach(input => {
     input.addEventListener('focus', (event) =>  {
     event.target.reportValidity();
-    console.log('required');
     });
 });
 
@@ -41,7 +56,7 @@ BSN.addEventListener('blur', () => {
 });
 
 // swap pages
-// Met hulp van Diego heb ik de volgende en vorige pagina functies geschreven. De code kan ik zelf helemaal uitleggen.
+// Met hulp van Diego heb ik de volgende en vorige pagina functies geschreven.
 function showCurrentPage(index) {
     pages.forEach((page, i) => {
         page.classList.toggle('active', i === index);
@@ -66,13 +81,17 @@ document.getElementById('next').addEventListener('click', () => {
     let isValid = true;
 
     inputs.forEach(input => {
+
         if (!input.checkValidity()) {
             isValid = false;
-            input.reportValidity();
+            input.reportValidity()
         }
     })
 
-    if (!isValid) return;
+    if (!isValid) {
+        document.querySelector('form').reportValidity();
+        return;
+    }
 
     if (currentIndex < pages.length - 1) {
         currentIndex++;

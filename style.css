@@ -13,7 +13,7 @@
 
     --ns-transparent-black: rgb(0, 6, 33, .16);
 
-    @media (prefers-color-scheme: dark) {
+    /* @media (prefers-color-scheme: dark) {
         --ns-yellow: #003082;
         --ns-blue: #f0f1f3;
         --ns-text-blue: #f0f1f3;
@@ -22,7 +22,7 @@
         --ns-black: #f0f1f3;
         --ns-gray: #404144;
         --ns-transparent-black: #404144;
-    }
+    } */
 }
 
 /* Add fallback fontsss */
@@ -138,7 +138,7 @@ legend p {
     box-shadow: inset 0px -3px var(--ns-darkblue);
 }
 
-.pagination button:hover {
+.pagination button:hover, .submit_button:hover {
     box-shadow: inset 0px -300px var(--ns-darkblue);
     transition: .7s
 }
@@ -169,6 +169,13 @@ fieldset {
     > fieldset {
         padding: 0;
     }
+}
+
+.context-verplicht {
+    font-family: 'thin', sans-serif;
+    align-self: start;
+    margin: 0 0 2rem 0;
+    color: var(--ns-text-blue);
 }
 
 legend {
@@ -242,9 +249,10 @@ input[type=radio] {
 }
 
 input[type=date] {
-    width: 100%;
+    width: 30%;
     height: 2.5rem;
     background-color: var(--ns-white);
+    color: var(--ns-black);
     border: 1px solid var(--ns-transparent-black);
     margin-bottom: 1rem;
 }
@@ -304,6 +312,12 @@ fieldset fieldset:has(input[type=radio][required], select[required]) legend {
 
 fieldset .gemachtigden:has(select[required]) label::before {
     content: "";
+}
+
+label:has(input[required]) p::after {
+    content: "oops";
+    color: var(--ns-red);
+    visibility: hidden;
 }
 
 /* bsn custom message */
