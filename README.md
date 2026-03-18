@@ -88,9 +88,13 @@ Ik heb vandaag als laatste loodjes geprobeerd custom validities toe te voegen aa
 
 In mijn formulier kan je naar een volgende pagina gaan pas als de huidige pagina valide is. Eerst kreeg je allemaal meldingen van het formulier op een onlogische wijze, bijvoorbeeld dat het onderste required input veld werd gemeld i.p.v de eerste die niet valide zijn. Met hulp van Vasilis heb ik nu de reportValidity() functie op het form element, hierdoor report het de eerst volgende required input veld die niet valid.
 
+## Reflectie BT
+Ik vond persoonlijk het maken van een formulier niet het meest interessante dat je in code kan doen. Ik vind het leuk om bezig zijn met de gebruiker, maar in dit geval was het heel moeilijk omdat de doelgroep erg breedt was. Je moet je bezig houden met mensen die bijvoorbeeld blind zijn, niet goed kunnen zien, mensen met die een motor-handicap hebben, wat ik erg lastig vind. Daarintegen was het wel heel leerzaam ik had me niet kunnen voorstellen dat ik zo'n breed formulier had kunnen maken aan het begin van dit vak.
+
+Waar ik me achteraf wel beter op had kunnen instellen van het werkproces was het beter nadenken over welke stappen ik als eerste zou nemen. Ik ging vaak van html naar css, naar Js. Hierdoor ging het werken heel chaotisch en kon moeilijk het proces bijhouden. Daarintegen ben ik wel heel trots op wat ik heb gemaakt en welke sprongen heb kunnen maken in het maken van validatie, javascript en goed nadenken waar ik welke codeer taal voor moet gebruiken. 
+
 
 ### Bronnen
-
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form - Voorbeeld van een form
-
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input - type inputs.. radio, checkbox etc.
+Ai om pas naar volgende pagina te gaan als het valide is. Prompt: i want to only go to next page when its valid - in code het antwoord
