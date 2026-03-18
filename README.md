@@ -97,4 +97,4 @@ Waar ik me achteraf wel beter op had kunnen instellen van het werkproces was het
 ### Bronnen
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form - Voorbeeld van een form
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input - type inputs.. radio, checkbox etc.
-Ai om pas naar volgende pagina te gaan als het valide is. Prompt: i want to only go to next page when its valid - in code het antwoord
+Ai om pas naar volgende pagina te gaan als het valide is. Prompt: "i want to only go to next page when its valid" met daarbij mijn code- in code het antwoord
