@@ -3,10 +3,14 @@
 ## BT Week 1
 
 ### Maandag 16 Februari
-Ik heb vandaag een html structuur gemaakt van de eerste pagina van het formulier. Hiervoor heb ik geleerd om met fieldsets te werken en deze semantisch toe te passen. Ik focus me voor nu nog erg veel op de html structuur van het formulier, hier heb ik ook veel mdn gebruikt om in te lezen over de verschillende attribute van inputs en labels. Het maken van de juiste structuur duurde langen dan gedacht, morgen ga ik verder met de structuur van de tweede pagina en de eerste afmaken.
+Ik heb vandaag een html structuur gemaakt van de eerste pagina van het formulier. Hiervoor heb ik geleerd om met fieldsets te werken en deze semantisch toe te passen. Ik focus me voor nu nog erg veel op de html structuur van het formulier, hier heb ik ook de website mdn veel voor gebruikt om in te lezen over de verschillende attributen van inputs en labels. Het maken van de juiste structuur duurde langen dan gedacht, morgen ga ik verder met de structuur van de tweede pagina en de eerste afmaken.
 
 ### Dinsdag 17 Februari
-Ik heb vandaag de html toegevoegd van de eerste pagina die ik nog niet had. Dit duurde niet zo lang en was meer van hetzelfde. Wat wel lang duurde was het uploaden van mijn fonts. Ik wilde ervoor zorgen dat ze niet in mijn github stonden maar wel op mijn computer, hiervoor had ik .gitignore gebruikt waarin ik *.ttf had gezegd. Dit zorgde ervoor dat alle .ttf bestanden niet naar mijn github werden gestuurd. Waar ik tegenaan liep was dat ik de fonts had toegevoegd voordat ik gitignore had toegevoegd. Ik heb daarnaast de eerste styling van mijn css bestand toegevoegd, hierdoor lijkt het wat meer op de NS stijl, de workshop van Victor had hier veel bij geholpen.
+Ik heb vandaag aanvullende html toegevoegd van het eerste onderdeel van het form. Dit duurde niet zo lang en was meer van hetzelfde. Wat wel lang duurde was het uploaden van mijn fonts. Ik wilde ervoor zorgen dat ze niet in mijn github stonden maar wel op mijn computer, hiervoor had ik .gitignore gebruikt waarin ik *.ttf had gezet. Dit zorgde ervoor dat alle .ttf bestanden niet naar mijn github werden gestuurd. Waar ik tegenaan liep was dat ik de fonts had toegevoegd voor gitignore, hierdoor waren al geüpload voor de gitignore.
+Ik heb daarnaast de eerste styling van mijn css bestand toegevoegd, hierdoor lijkt het wat meer op de NS stijl, de workshop van Victor had hier veel bij geholpen.
+
+### Afronding week 1
+Ik vond de eerste week van BT al erg leerzaam, zo heb ik bijvoorbeeld over fieldsets geleerd, verschrillende inputs en hoe het basis principe van validatie nou eigenlijk werkt. Zo wist ik bijvoorbeeld niet dat je required kon toevoegen aan een input element. Ik vind het nog wel lastig om in te zien wat ik het beste als mee aan de slag moet gaan. 
 
 ## Week 2
 
@@ -50,8 +54,6 @@ After:
 
 
 
-
-
 ### Dinsdag 10 Maart
 Ik de ochtend hebben we een weekly geek gehad over het artikel What happened to text inputs. Het artikel was over het algemeen wel interssant. Ik vond alleen dat er te veel pauzes in de video zat en misschien veel stukken in teksten onnodig waren om de boodschap over te brengen.
 
@@ -62,7 +64,6 @@ Volgende keer ga ik verder met nog kleine details aan validatie toevoegen, zoals
 
 ### Vrijdag 13 Maart
 We hadden weer een gesprek vandaag met Victor waarin iedereen feedback met elkaar had gedeelt. Het was fijn om inspiratie te zien en wat mijn groepje allemaal heeft gemaakt. De feedback die ik had gekregen was om bijvoorbeeld de landcodes om te zetten in JavaScript en daar een datalist van te maken. Ook zou het misschien beter zijn om nog de radio vragen standaard uit te zetten hier was ik deze week nog niet aan toegekomen. Ook moest nog wat beter nadenken over de styling en contrast van bijvoorbeeld knoppen.
-
 
 ### Afronding week 3 
 Ik vond dat ik deze week wel goede stappen heb gezet in het stylen van het formulier, ik had nog wel meer tijd willen hebben om beter na te denken over de UX van het formulier. Er blijken nog veel onderdelen niet zo goed te werken als ik zelf had gedacht zoals de landcodes en het eerste stukje van het formulier, deze staan nu op een blur maar zijn op veel manieren onhandig, omdat je niet het tekstvak kan deselecteren. 
@@ -79,21 +80,21 @@ Ik had voor mezelf een lijst gemaakt van dingen die ik nog wilde toevoegen in mi
 - Meer context over het formulier bijvoorbeeld vertellen welke input verplicht is.
 - Feedback verwerken van vorige week
 
-Niet alles was even goed gelukt helaas, ik heb bijvoorbeeld kunnen aanduiden welk input velden verplicht waren door een sterretje naast de vraag te zetten. Ik wil nog wel bovenin de website uitleggen wat dit sterretje betekent. Ik heb het element toegevoegd doormiddel van het pseudo element ::before waar ik ook al eerdere uitleg over heb gekregen.
-Wat minder goed was gelukt was het tweede thema toevoegen voor mensen die liever een donker thema hebben. Ik moet nog wat styling hiervoor toevoegen want ik ben nog niet tevreden met het resultaat. Verder heb ik wel veel feedback kunnen verwerken van vorige week waaronder het wegglaten van de radio vragen. Dit zorgt voor meer rust in het formulier.
-
+Helaas niet alles was even goed gelukt, ik heb bijvoorbeeld kunnen aanduiden welk input velden verplicht waren door een sterretje naast de vraag te zetten. Ik wil nog wel bovenin de website uitleggen wat dit sterretje betekent. Ik heb het element toegevoegd doormiddel van het pseudo element ::before waar ik ook al eerdere uitleg over heb gekregen.
+Ik had vandaag nog geen tijd gehad om een donker thema toe te voegen wat wel jammer is maar hier ga ik morgen naar kijken. Verder heb ik wel veel feedback kunnen verwerken van vorige week waaronder het standaard wegglaten van de radio vragen. Dit zorgt voor meer rust in het formulier.
 
 ### Dinsdag 17 Maart
-- Geprobeert om custom errors te melden via javascript voor verplichte velden
-- date validatie
-- context formulier, bijv wat sterretjes betekenen.
-- js validatie verbeterd 
-
 Ik heb vandaag als laatste loodjes geprobeerd custom validities toe te voegen aan mijn formulier zoals ik nu bij het burger service nummer heb. Dit vond ik eigenlijk heel gecompliceerd en heel veel werk om allemaal toe te voegen voor de laatste dag, waardoor ik ervoor heb gekozen om het zo te laten. Ik vind dat ik wel veel progressie heb gemaakt in het formulier, ik heb namelijk javaScript validatie toegevoegd aan de date inputs. Deze inputs worden nu automatisch geüpdate met de datumn van vandaag. Ook kan je niet een datumn verder dan 8 maanden uitkiezen, je 4 maanden om het aangifte formulier in te vullen, maar in sommige gevallen kan je ook uitstel krijgen van 4 maanden. 
 
-In mijn formulier kan je naar een volgende pagina gaan pas als de huidige pagina valide is. Eerst kreeg je allemaal meldingen van het formulier op een onlogische wijze, bijvoorbeeld dat het onderste required input veld werd gemeld i.p.v de eerste die niet valide zijn. Met hulp van Vasilis heb ik nu de reportValidity() functie op het form element, hierdoor report het de eerst volgende required input veld die niet valid. 
+In mijn formulier kan je naar een volgende pagina gaan pas als de huidige pagina valide is. Eerst kreeg je allemaal meldingen van het formulier op een onlogische wijze, bijvoorbeeld dat het onderste required input veld werd gemeld i.p.v de eerste die niet valide zijn. Met hulp van Vasilis heb ik nu de reportValidity() functie op het form element, hierdoor report het de eerst volgende required input veld die niet valid.
+
+## Reflectie BT
+Ik vond persoonlijk het maken van een formulier niet het meest interessante dat je in code kan doen. Ik vind het leuk om bezig zijn met de gebruiker, maar in dit geval was het heel moeilijk omdat de doelgroep erg breedt was. Je moet je bezig houden met mensen die bijvoorbeeld blind zijn, niet goed kunnen zien, mensen met die een motor-handicap hebben, wat ik erg lastig vind. Daarintegen was het wel heel leerzaam ik had me niet kunnen voorstellen dat ik zo'n breed formulier had kunnen maken aan het begin van dit vak.
+
+Waar ik me achteraf wel beter op had kunnen instellen van het werkproces was het beter nadenken over welke stappen ik als eerste zou nemen. Ik ging vaak van html naar css, naar Js. Hierdoor ging het werken heel chaotisch en kon moeilijk het proces bijhouden. Daarintegen ben ik wel heel trots op wat ik heb gemaakt en welke sprongen heb kunnen maken in het maken van validatie, javascript en goed nadenken waar ik welke codeer taal voor moet gebruiken. 
 
 
 ### Bronnen
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form - form examples
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form - Voorbeeld van een form
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input - type inputs.. radio, checkbox etc.
+Ai om pas naar volgende pagina te gaan als het valide is. Prompt: i want to only go to next page when its valid - in code het antwoord
